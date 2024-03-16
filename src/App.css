@@ -1,38 +1,267 @@
-.App {
-  text-align: center;
+#menu{
+  width: 90%;
+  height: 500px;
+  background: rgb(56,24,244);
+ background-color: #735FF1;
+  padding: 20px;
+  margin: 0 auto;
+  border-radius: 45px;
+  border-bottom-left-radius: 110px;
+  border-bottom-right-radius: 180px;
+ /* clip-path: polygon(0 0, 100% 0, 99% 100%, 1% 100%); */
+  clip-path: polygon(50% 0%, 100% 0, 97% 94%, 3% 100%, 0 0);
+  display: flex;
+  justify-content: center;
+  color: white;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#subli{
+  border-bottom: 2px solid yellow;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background: -webkit-linear-gradient(orange, yellow);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#spans{
+  display: flex; 
+  align-items: center;
+  gap: 30px;
+  font-family: sans-serif;
+}
+#btn{
+  background-color: yellow;
+  padding: 17px;
+  width: 270px;
+border: none;
+border-radius: 50px;
+-webkit-box-shadow: 5px 5px 0px 0px #289FED, 5px 5px 15px 5px rgba(0,0,0,0); 
+box-shadow: 3px 3px 0px 0px orange, 5px 5px 15px 5px rgba(0,0,0,0);
+cursor: pointer;
+font-size: 13px;
+color: rgb(247, 169, 24);
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#btn:hover{
+  background-color: yellow;
+  padding: 17px;
+  width: 270px;
+border: none;
+border-radius: 50px;
+-webkit-box-shadow: 5px 5px 0px 0px #289FED, 5px 5px 15px 5px rgba(0,0,0,0); 
+box-shadow: 0px 0px 0px 0px orange, 5px 5px 15px 5px rgba(0,0,0,0);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#meni{
+  position: absolute;
+  bottom: 80px;
+  right: 100px;
+}
+#info{
+  position: absolute;
+ left: 108px;
+ top: 60px;
+}
+#info>h1{
+  font-size: 49px;
+}
+#spancur{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #565557;
+}
+#spancur>h1{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 0;
+}
+#CSP{
+  display: flex;
+  flex-flow: row wrap;
+  gap: 12px;
+  width: 800px;
+  height: max-content;
+}
+#CSP>div{
+width: 370px;
+background-color: #F3F5FD;
+height: 190px;
+border-radius: 12px;
+padding: 12px;
+}
+#CSP>div>span{
+  background-color: #E4E7F0;
+border-radius: 50%;
+padding-left: 10px;
+padding-right: 10px;
+padding-top: 5px;
+padding-bottom: 5px;
+
+}
+#CSP>div>#o{
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 20px;
+}
+#infomg{
+ /* position: absolute; */
+  width: 130px;
+  height: 130px;
+}
+#ingimg{
+  /* position: absolute; */
+   width: 130px;
+   height: 130px;
+ }
+ #empreenimg{
+  /* position: absolute; */
+   width: 130px;
+   height: 130px;
+ }
+ #EMCimg{
+  /* position: absolute; */
+   width: 130px;
+   height: 130px;
+ }
+#ppp{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+#links{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+}
+#menuba{
+  background-color: transparent;
+  width: 100%;
+  z-index: 50;
+  height: 50px;
+  position: fixed;
+  backdrop-filter: blur(5px);
+}
+#icon{
+  caret-color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#btncontact{
+  z-index: 30;
+  width: 50px;
+  height: 50px;
+  background-color: #735FF1;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  -webkit-box-shadow: inset -1px 3px 8px 5px #1F87FF, 2px 5px 16px 0px #0B325E, 50px 7px 25px 12px rgba(0,0,0,0); 
+box-shadow: inset -1px 3px 8px 5px #1F87FF, 2px 5px 16px 0px #0B325E, 50px 7px 25px 12px rgba(0,0,0,0);
+}
+#divspan{
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content:center;
+}
+#number{
+  background-color: #F3F5FD; 
+  padding: 8px;
+border-radius: 5px;
+position: absolute;
+left: 0;
+width: max-content;
+padding-left: 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#btncontact {
+  transition: all 0.03s linear;
+}
+
+#btncontact:hover {
+  background-color: #65b9e6;
+}
+
+#btncontact:active {
+  box-shadow: 0 0 2px darkslategray;
+  transform: translateY(2px);
+}
+#logindiv{
+  background-color: #735FF1;
+  width: 790px;
+  height: 320px;
+  margin: 0 auto;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+#logindiv>div>h1{
+  color: white;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 30px;
+}
+#logindiv>div>#tt{
+  color: white;
+}
+#logindiv>form>input{
+  background-color: white;
+  padding: 17px;
+  width: 270px;
+border: none;
+border-radius: 50px;
+font-size: 13px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#logindiv>form>button{
+  background-color: yellow;
+  padding: 15px;
+  width: 290px;
+border: none;
+border-radius: 50px;
+-webkit-box-shadow: 5px 5px 0px 0px #289FED, 5px 5px 15px 5px rgba(0,0,0,0); 
+box-shadow: 3px 3px 0px 0px orange, 5px 5px 15px 5px rgba(0,0,0,0);
+cursor: pointer;
+font-size: 13px;
+color: rgb(247, 169, 24);
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#logindiv>form{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 15px;
+}
+
+#logindiv>form>span{
+color: white;
+}
+
+#logindiv>form>span>a{
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+text-decoration: none;
   }
-  to {
-    transform: rotate(360deg);
-  }
+  
+  
+#baixo{
+  background-color: #735FF1;
+  width: 100%;
+  height: 400px;
+  background-color: #3a393b;
+  display: flex;
+  align-items: center;
+  gap: 90px;
+}
+#baixo>ul{
+  list-style: none;
+  color: white;
+  font-size: 13px;
 }
